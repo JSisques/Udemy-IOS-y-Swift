@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Swift
+//  CursoSwift
 //
 //  Created by Javier Plaza Sisqués on 25/8/21.
 //
