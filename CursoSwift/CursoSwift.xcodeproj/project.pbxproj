@@ -26,6 +26,7 @@
 		59C4BCBB26D653A7000ADBB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59C4BCC326D653CC000ADBB9 /* HelloWorld.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HelloWorld.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59C4BCC426D793D6000ADBB9 /* DataTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		59C4BCC826D79EA5000ADBB9 /* TipoDeDatoString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TipoDeDatoString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +74,27 @@
 		59C4BCC226D653BE000ADBB9 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				59C4BCC326D653CC000ADBB9 /* HelloWorld.playground */,
-				59C4BCC426D793D6000ADBB9 /* DataTypes.playground */,
+				59C4BCC626D79E1A000ADBB9 /* Seccion 4 */,
+				59C4BCC526D79E08000ADBB9 /* Seccion 3 */,
 			);
 			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		59C4BCC526D79E08000ADBB9 /* Seccion 3 */ = {
+			isa = PBXGroup;
+			children = (
+				59C4BCC426D793D6000ADBB9 /* DataTypes.playground */,
+				59C4BCC326D653CC000ADBB9 /* HelloWorld.playground */,
+			);
+			path = "Seccion 3";
+			sourceTree = "<group>";
+		};
+		59C4BCC626D79E1A000ADBB9 /* Seccion 4 */ = {
+			isa = PBXGroup;
+			children = (
+				59C4BCC826D79EA5000ADBB9 /* TipoDeDatoString.playground */,
+			);
+			path = "Seccion 4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
