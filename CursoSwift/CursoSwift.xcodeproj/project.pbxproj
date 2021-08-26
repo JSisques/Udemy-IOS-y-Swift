@@ -29,6 +29,7 @@
 		59C4BCC826D79EA5000ADBB9 /* TipoDeDatoString.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TipoDeDatoString.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59C4BCC926D7A086000ADBB9 /* CaracteresUnicodeEmojis.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CaracteresUnicodeEmojis.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59C4BCCA26D7A289000ADBB9 /* ConcatenacionInterpolacion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ConcatenacionInterpolacion.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		59C4BCCB26D7A4D8000ADBB9 /* Operaciones.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operaciones.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +77,8 @@
 		59C4BCC226D653BE000ADBB9 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				59C4BCC626D79E1A000ADBB9 /* Seccion 4 */,
 				59C4BCC526D79E08000ADBB9 /* Seccion 3 */,
+				59C4BCC626D79E1A000ADBB9 /* Seccion 4 */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
@@ -97,6 +98,7 @@
 				59C4BCC826D79EA5000ADBB9 /* TipoDeDatoString.playground */,
 				59C4BCC926D7A086000ADBB9 /* CaracteresUnicodeEmojis.playground */,
 				59C4BCCA26D7A289000ADBB9 /* ConcatenacionInterpolacion.playground */,
+				59C4BCCB26D7A4D8000ADBB9 /* Operaciones.playground */,
 			);
 			path = "Seccion 4";
 			sourceTree = "<group>";
