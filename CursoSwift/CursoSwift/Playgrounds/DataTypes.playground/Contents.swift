@@ -5,10 +5,14 @@ import UIKit
 //Enteros
 
 var x = 18
+var entero: Int = 20000000000
+var entero2: Int8 = 20
 
 //Flotantes
 
 var y = 18.8
+var double: Double = 18.8
+var float: Float = 18.8
 
 //Operadores aritmeticos
 
