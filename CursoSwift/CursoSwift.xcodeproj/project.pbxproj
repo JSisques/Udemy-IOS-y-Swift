@@ -25,6 +25,7 @@
 		59C4BCB926D653A7000ADBB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59C4BCBB26D653A7000ADBB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59C4BCC326D653CC000ADBB9 /* HelloWorld.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HelloWorld.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		59C4BCC426D793D6000ADBB9 /* DataTypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DataTypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				59C4BCC326D653CC000ADBB9 /* HelloWorld.playground */,
+				59C4BCC426D793D6000ADBB9 /* DataTypes.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
