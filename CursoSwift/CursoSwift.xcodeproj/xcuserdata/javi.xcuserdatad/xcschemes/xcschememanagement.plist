@@ -46,6 +46,27 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>Bucle While (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>Bucle While (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>Bucle While (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>BucleFor (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
