@@ -15,3 +15,4 @@ myModernDictionary[002]
 //Borrar datos
 myModernDictionary[002] = nil
 myModernDictionary.removeValue(forKey: 003) //Manera clásica
+
