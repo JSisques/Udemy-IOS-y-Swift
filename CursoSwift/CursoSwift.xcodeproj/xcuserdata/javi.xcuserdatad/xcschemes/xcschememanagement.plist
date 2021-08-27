@@ -261,6 +261,27 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>Operadores (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
+		<key>Operadores (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
+		<key>Operadores (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
 		<key>RangeOperator (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
