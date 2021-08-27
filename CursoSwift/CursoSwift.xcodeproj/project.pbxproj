@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59796E1C26D8F4DE00D74DA4 /* Booleanos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Booleanos.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59C4BCAA26D653A6000ADBB9 /* CursoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C4BCAD26D653A6000ADBB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C4BCAF26D653A6000ADBB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59796E1B26D8F4BD00D74DA4 /* Seccion 5 */ = {
+			isa = PBXGroup;
+			children = (
+				59796E1C26D8F4DE00D74DA4 /* Booleanos.playground */,
+			);
+			path = "Seccion 5";
+			sourceTree = "<group>";
+		};
 		59C4BCA126D653A6000ADBB9 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +88,7 @@
 			children = (
 				59C4BCC526D79E08000ADBB9 /* Seccion 3 */,
 				59C4BCC626D79E1A000ADBB9 /* Seccion 4 */,
+				59796E1B26D8F4BD00D74DA4 /* Seccion 5 */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
