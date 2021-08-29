@@ -49,6 +49,7 @@
 		59C4BCC926D7A086000ADBB9 /* CaracteresUnicodeEmojis.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CaracteresUnicodeEmojis.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59C4BCCA26D7A289000ADBB9 /* ConcatenacionInterpolacion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ConcatenacionInterpolacion.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59C4BCCB26D7A4D8000ADBB9 /* Operaciones.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operaciones.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		59D621E726DC2971004FBC4A /* GuardLet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = GuardLet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 				59A9E7B526DBE9AA006F7307 /* Optionals.playground */,
 				59A9E7B626DBECDA006F7307 /* OptionalBinding.playground */,
 				59A9E7B826DBEF57006F7307 /* OptionalChaining.playground */,
+				59D621E726DC2971004FBC4A /* GuardLet.playground */,
 			);
 			path = "Seccion 8";
 			sourceTree = "<group>";
