@@ -30,7 +30,7 @@ func cuboDe(num: Int) -> Int{
     
     var resultado = 1
     
-    for i in 0...2{
+    for _ in 0...2{
         resultado *= num
     }
     
@@ -54,3 +54,11 @@ func listaNombres() -> [String]{
 }
 
 var nombres = listaNombres()
+
+//Nombre de parametros internos y externos
+func calificacionPromedio(matematicas materiaUno: Double, fisica materiaDos: Double, algebra materiaTres: Double) -> Double{
+    return(materiaUno + materiaDos + materiaTres) / 3
+}
+
+//let promedio = calificacionPromedio(materiaUno: 81, materiaDos: 60, materiaTres: 45)
+let promedio = calificacionPromedio(matematicas: 81, fisica: 60, algebra: 45)
