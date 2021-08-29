@@ -46,3 +46,11 @@ func saludar(nombre: String, mensaje: String = "te saludo"){
 }
 
 saludar(nombre: "Javi")
+
+func listaNombres() -> [String]{
+    
+    let arrayNombres = ["Jose", "Maria", "Morelos"]
+    return arrayNombres
+}
+
+var nombres = listaNombres()
