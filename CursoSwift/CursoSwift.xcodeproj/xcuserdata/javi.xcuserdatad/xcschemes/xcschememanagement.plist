@@ -450,6 +450,27 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>ManejoErrores (Playground) 1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>30</integer>
+		</dict>
+		<key>ManejoErrores (Playground) 2.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>31</integer>
+		</dict>
+		<key>ManejoErrores (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>Operaciones (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
