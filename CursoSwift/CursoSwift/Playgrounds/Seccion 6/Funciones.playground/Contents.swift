@@ -40,9 +40,9 @@ func cuboDe(num: Int) -> Int{
 print(cuboDe(num: numeroAleatorio))
 
 
-func saludar(nombre: String, mensaje: String){
+func saludar(nombre: String, mensaje: String = "te saludo"){
     
     print("Hola \(nombre), \(mensaje)")
 }
 
-saludar(nombre: "Javi", mensaje: "te saludo")
+saludar(nombre: "Javi")
