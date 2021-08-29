@@ -24,3 +24,25 @@ func cuadradoDeNumero(x: Int){
 }
 
 cuadradoDeNumero(x: numeroAleatorio)
+
+
+func cuboDe(num: Int) -> Int{
+    
+    var resultado = 1
+    
+    for i in 0...2{
+        resultado *= num
+    }
+    
+    return resultado
+}
+
+print(cuboDe(num: numeroAleatorio))
+
+
+func saludar(nombre: String, mensaje: String){
+    
+    print("Hola \(nombre), \(mensaje)")
+}
+
+saludar(nombre: "Javi", mensaje: "te saludo")
