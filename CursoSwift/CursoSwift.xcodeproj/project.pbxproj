@@ -19,6 +19,7 @@
 		59054D5F26DB7E7F002C777A /* Funciones.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Funciones.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59054D6126DB87F2002C777A /* Estructuras.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Estructuras.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59054D6226DB8920002C777A /* Clases.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Clases.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		59054D6326DB8A9B002C777A /* ClaseVsEstructura.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClaseVsEstructura.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		592FFC0226D95B170001E6CD /* BucleFor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BucleFor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		592FFC0326D95C770001E6CD /* Bucle While.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Bucle While.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		592FFC0426D95DAF0001E6CD /* BucleRepeatWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BucleRepeatWhile.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -71,6 +72,7 @@
 			children = (
 				59054D6126DB87F2002C777A /* Estructuras.playground */,
 				59054D6226DB8920002C777A /* Clases.playground */,
+				59054D6326DB8A9B002C777A /* ClaseVsEstructura.playground */,
 			);
 			path = "Seccion 7";
 			sourceTree = "<group>";
