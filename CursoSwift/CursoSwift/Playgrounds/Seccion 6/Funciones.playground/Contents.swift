@@ -62,3 +62,13 @@ func calificacionPromedio(matematicas materiaUno: Double, fisica materiaDos: Dou
 
 //let promedio = calificacionPromedio(materiaUno: 81, materiaDos: 60, materiaTres: 45)
 let promedio = calificacionPromedio(matematicas: 81, fisica: 60, algebra: 45)
+
+
+//Closures (Bloque autocontenido de codigo que se puede asignar a una variable)
+let miClosure = {
+(materiaUno: Double, materiaDos: Double, materiaTres: Double) -> Double in
+    return(materiaUno + materiaDos + materiaTres) / 3
+}
+
+print("Mi calificacion promedio fue de \(miClosure(100, 22, 88))")
+
