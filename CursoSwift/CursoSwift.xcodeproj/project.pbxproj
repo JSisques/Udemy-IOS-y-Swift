@@ -32,6 +32,7 @@
 		59796E2226D9064F00D74DA4 /* Operadores.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operadores.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59796E2326D906E700D74DA4 /* IfElse.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IfElse.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59796E2426D9088500D74DA4 /* Switch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Switch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5979932F26DD2A47007D6488 /* TypeCasting.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TypeCasting.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59A9E7B526DBE9AA006F7307 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59A9E7B626DBECDA006F7307 /* OptionalBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalBinding.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59A9E7B826DBEF57006F7307 /* OptionalChaining.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalChaining.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -90,6 +91,7 @@
 				59A9E7B826DBEF57006F7307 /* OptionalChaining.playground */,
 				59D621E726DC2971004FBC4A /* GuardLet.playground */,
 				59D621E826DC2AE9004FBC4A /* ManejoErrores.playground */,
+				5979932F26DD2A47007D6488 /* TypeCasting.playground */,
 			);
 			path = "Seccion 8";
 			sourceTree = "<group>";
