@@ -38,6 +38,7 @@
 		5979933226DD319F007D6488 /* Protocolos.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocolos.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		599B848B26DFBBE300FDA0A5 /* Generics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		599B848C26DFBFB400FDA0A5 /* AdvancedOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AdvancedOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		599B848E26DFC92300FDA0A5 /* Sets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Sets.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59A9E7B526DBE9AA006F7307 /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59A9E7B626DBECDA006F7307 /* OptionalBinding.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalBinding.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59A9E7B826DBEF57006F7307 /* OptionalChaining.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalChaining.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -125,6 +126,14 @@
 			path = "Seccion 5";
 			sourceTree = "<group>";
 		};
+		599B848D26DFC39500FDA0A5 /* Seccion 9 */ = {
+			isa = PBXGroup;
+			children = (
+				599B848E26DFC92300FDA0A5 /* Sets.playground */,
+			);
+			path = "Seccion 9";
+			sourceTree = "<group>";
+		};
 		59C4BCA126D653A6000ADBB9 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +174,7 @@
 				59054D5D26DB7983002C777A /* Seccion 6 */,
 				59054D6026DB8506002C777A /* Seccion 7 */,
 				59054D6426DB8E64002C777A /* Seccion 8 */,
+				599B848D26DFC39500FDA0A5 /* Seccion 9 */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
