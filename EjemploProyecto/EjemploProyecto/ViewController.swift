@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         etiqueta.text = "Ya cambié"
+        etiqueta.text = "Ya cambié 2"
+        etiqueta.text = "Ya cambié 3"
+        etiqueta.text = "Ya cambié 4"
     }
     
     @IBAction func cambiarTexto(_ sender: Any) {
