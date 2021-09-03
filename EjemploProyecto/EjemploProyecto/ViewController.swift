@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var etiqueta: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        etiqueta.text = "Ya cambié"
     }
-
-
+    
+    @IBAction func cambiarTexto(_ sender: Any) {
+        etiqueta.text = "Acción del botón"
+    }
 }
 
