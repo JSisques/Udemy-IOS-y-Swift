@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myProgressView: UIProgressView!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var mySwitchLabel: UILabel!
+    @IBOutlet weak var myTextField: UITextField!
     
     //Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
@@ -76,6 +77,11 @@ class ViewController: UIViewController {
         mySwitchLabel.textColor = .darkGray
         mySwitchLabel.font = UIFont.boldSystemFont(ofSize: 16)
         mySwitchLabel.text = "Está apagado"
+        
+        //Text Field
+        myTextField.textColor = .brown
+        myTextField.placeholder = "Escribe algo..."
+        myTextField.delegate = self
     }
     
     //Actions
@@ -232,4 +238,16 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate{
     }
     
     
+}
+
+extension ViewController: UITextFieldDelegate{
+    
+    //Función para cerrar el teclado
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        myButton.setTitle(myTextField.text, for: .normal)
+    }
 }

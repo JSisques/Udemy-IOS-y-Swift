@@ -72,6 +72,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qh0-4z-tTg">
+                                <rect key="frame" x="20" y="626" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,6 +87,7 @@
                             <constraint firstItem="aYz-fh-O65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8EB-Pk-HqW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1h-Mi-mvO" secondAttribute="trailing" constant="184" id="9r6-k2-yeh"/>
                             <constraint firstItem="p1h-Mi-mvO" firstAttribute="top" secondItem="BCQ-WX-qct" secondAttribute="bottom" constant="20" id="Bhb-Ld-DTk"/>
+                            <constraint firstItem="Qh0-4z-tTg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bkd-Uu-c78"/>
                             <constraint firstItem="7oi-9y-0qw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EwE-DO-po7"/>
                             <constraint firstItem="p1h-Mi-mvO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="F4B-iL-FdS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vzi-vz-1Wo" secondAttribute="trailing" constant="20" id="GPS-7x-SQB"/>
@@ -91,10 +97,12 @@
                             <constraint firstItem="pm8-ba-Nx8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LA7-Zr-b6r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pm8-ba-Nx8" secondAttribute="trailing" constant="20" id="LKS-CT-hzq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wFL-Fw-jvE" secondAttribute="trailing" constant="20" id="TFo-BJ-uUD"/>
+                            <constraint firstItem="Qh0-4z-tTg" firstAttribute="top" secondItem="Vzi-vz-1Wo" secondAttribute="bottom" constant="20" id="TZV-d1-dno"/>
                             <constraint firstItem="u64-fX-zwo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UeO-zE-gzj"/>
                             <constraint firstItem="bHa-JN-FX9" firstAttribute="centerY" secondItem="aYz-fh-O65" secondAttribute="centerY" id="XEb-Tu-ATF"/>
                             <constraint firstItem="p1h-Mi-mvO" firstAttribute="leading" secondItem="7oi-9y-0qw" secondAttribute="trailing" constant="20" id="XXw-vw-r0X"/>
                             <constraint firstItem="q7S-V3-htq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="bIT-gc-nZa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qh0-4z-tTg" secondAttribute="trailing" constant="20" id="cIy-nb-eaB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q7S-V3-htq" secondAttribute="trailing" constant="66" id="deg-BW-crn"/>
                             <constraint firstItem="wFL-Fw-jvE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g08-Up-PeJ"/>
                             <constraint firstItem="BCQ-WX-qct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="gHw-yJ-B5u"/>
@@ -118,6 +126,7 @@
                         <outlet property="myStepper" destination="BCQ-WX-qct" id="x14-DN-dCT"/>
                         <outlet property="mySwitch" destination="p1h-Mi-mvO" id="C5J-Ms-3Bg"/>
                         <outlet property="mySwitchLabel" destination="7oi-9y-0qw" id="Pte-fB-EiE"/>
+                        <outlet property="myTextField" destination="Qh0-4z-tTg" id="g6b-HV-Ydz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
