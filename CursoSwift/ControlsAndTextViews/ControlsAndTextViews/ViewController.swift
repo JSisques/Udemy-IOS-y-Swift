@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var myProgressView: UIProgressView!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var mySwitchLabel: UILabel!
     
     //Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
@@ -70,6 +71,11 @@ class ViewController: UIViewController {
         myActivityIndicator.startAnimating()
         myActivityIndicator.color = .orange
         myActivityIndicator.hidesWhenStopped = true
+        
+        //Labels
+        mySwitchLabel.textColor = .darkGray
+        mySwitchLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        mySwitchLabel.text = "Está apagado"
     }
     
     //Actions
@@ -186,9 +192,11 @@ class ViewController: UIViewController {
             //Si el picker view esta oculto
             myPickerView.isHidden = false
             myActivityIndicator.stopAnimating()
+            mySwitchLabel.text = "Está encendido"
         } else {
             myPickerView.isHidden = true
             myActivityIndicator.startAnimating()
+            mySwitchLabel.text = "Está apagado"
         }
     }
 }
