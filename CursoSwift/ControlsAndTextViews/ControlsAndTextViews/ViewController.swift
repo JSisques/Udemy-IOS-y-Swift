@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var myStepper: UIStepper!
     
     //Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
@@ -49,6 +50,10 @@ class ViewController: UIViewController {
         mySlider.minimumValue = 0
         mySlider.maximumValue = Float(myPickerViewValues.count)
         
+        //Stepper
+        myStepper.minimumValue = 1
+        myStepper.maximumValue = Double(myPickerViewValues.count)
+        
     }
     
     //Actions
@@ -78,7 +83,6 @@ class ViewController: UIViewController {
     
     @IBAction func mySliderAction(_ sender: Any) {
         var myString = ""
-        myPageControl.currentPage = Int(mySlider.value)
         
         switch mySlider.value{
         case 1..<2:
@@ -107,6 +111,48 @@ class ViewController: UIViewController {
             myPickerView.selectRow(4, inComponent: 0, animated: true)
             mySegmentedControl.selectedSegmentIndex = 4
             
+        }
+        
+        myButton.setTitle(myString, for: .normal)
+    }
+    
+    @IBAction func myStepperAction(_ sender: Any) {
+        let value = myStepper.value
+        var myString = ""
+        
+        mySlider.value = 0
+        
+        switch value{
+        case 1..<2:
+            myPageControl.currentPage = 0
+            myPickerView.selectRow(0, inComponent: 0, animated: true)
+            mySegmentedControl.selectedSegmentIndex = 0
+            myString = myPickerViewValues[0]
+            mySlider.value = 1
+        case 2..<3:
+            myPageControl.currentPage = 1
+            myPickerView.selectRow(1, inComponent: 0, animated: true)
+            mySegmentedControl.selectedSegmentIndex = 1
+            myString = myPickerViewValues[1]
+            mySlider.value = 2
+        case 3..<4:
+            myPageControl.currentPage = 2
+            myString = myPickerViewValues[2]
+            myPickerView.selectRow(2, inComponent: 0, animated: true)
+            mySegmentedControl.selectedSegmentIndex = 2
+            mySlider.value = 3
+        case 4..<5:
+            myPageControl.currentPage = 3
+            myString = myPickerViewValues[3]
+            myPickerView.selectRow(3, inComponent: 0, animated: true)
+            mySegmentedControl.selectedSegmentIndex = 3
+            mySlider.value = 4
+        default:
+            myPageControl.currentPage = 4
+            myString = myPickerViewValues[4]
+            myPickerView.selectRow(4, inComponent: 0, animated: true)
+            mySegmentedControl.selectedSegmentIndex = 4
+            mySlider.value = 5
         }
         
         myButton.setTitle(myString, for: .normal)
