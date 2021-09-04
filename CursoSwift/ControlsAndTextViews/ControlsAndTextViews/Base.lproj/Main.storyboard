@@ -17,23 +17,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7S-V3-htq">
-                                <rect key="frame" x="66" y="159" width="282" height="30"/>
+                                <rect key="frame" x="66" y="64" width="282" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="myButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uBI-dz-uaw"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYz-fh-O65">
-                                <rect key="frame" x="0.0" y="209" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="114" width="414" height="216"/>
                             </pickerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="pm8-ba-Nx8">
-                                <rect key="frame" x="20" y="445" width="374" height="28"/>
+                                <rect key="frame" x="20" y="350" width="374" height="28"/>
                                 <connections>
                                     <action selector="myPageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Sx-aA-GBZ"/>
                                 </connections>
                             </pageControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="u64-fX-zwo">
-                                <rect key="frame" x="20" y="493" width="374" height="32"/>
+                                <rect key="frame" x="20" y="398" width="374" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -43,23 +43,29 @@
                                 </connections>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wFL-Fw-jvE">
-                                <rect key="frame" x="18" y="544" width="378" height="31"/>
+                                <rect key="frame" x="18" y="449" width="378" height="31"/>
                                 <connections>
                                     <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="WJD-rF-W9C"/>
                                 </connections>
                             </slider>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BCQ-WX-qct">
-                                <rect key="frame" x="160" y="594" width="94" height="32"/>
+                                <rect key="frame" x="160" y="499" width="94" height="32"/>
                                 <connections>
                                     <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="I1Z-3S-9iL"/>
                                 </connections>
                             </stepper>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p1h-Mi-mvO">
-                                <rect key="frame" x="183" y="646" width="49" height="31"/>
+                                <rect key="frame" x="183" y="551" width="49" height="31"/>
                                 <connections>
                                     <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qJP-fT-B10"/>
                                 </connections>
                             </switch>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vzi-vz-1Wo">
+                                <rect key="frame" x="20" y="602" width="374" height="4"/>
+                            </progressView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-JN-FX9">
+                                <rect key="frame" x="197" y="212" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,26 +77,33 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1h-Mi-mvO" secondAttribute="trailing" constant="184" id="9r6-k2-yeh"/>
                             <constraint firstItem="p1h-Mi-mvO" firstAttribute="top" secondItem="BCQ-WX-qct" secondAttribute="bottom" constant="20" id="Bhb-Ld-DTk"/>
                             <constraint firstItem="p1h-Mi-mvO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="F4B-iL-FdS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vzi-vz-1Wo" secondAttribute="trailing" constant="20" id="GPS-7x-SQB"/>
                             <constraint firstItem="aYz-fh-O65" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GQe-K1-vcW"/>
+                            <constraint firstItem="Vzi-vz-1Wo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KFx-US-Bza"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BCQ-WX-qct" secondAttribute="trailing" constant="160" id="KHI-Vh-kgL"/>
                             <constraint firstItem="pm8-ba-Nx8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LA7-Zr-b6r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pm8-ba-Nx8" secondAttribute="trailing" constant="20" id="LKS-CT-hzq"/>
-                            <constraint firstItem="q7S-V3-htq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="RlE-0I-00H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wFL-Fw-jvE" secondAttribute="trailing" constant="20" id="TFo-BJ-uUD"/>
                             <constraint firstItem="u64-fX-zwo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UeO-zE-gzj"/>
+                            <constraint firstItem="bHa-JN-FX9" firstAttribute="centerY" secondItem="aYz-fh-O65" secondAttribute="centerY" id="XEb-Tu-ATF"/>
                             <constraint firstItem="q7S-V3-htq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="bIT-gc-nZa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q7S-V3-htq" secondAttribute="trailing" constant="66" id="deg-BW-crn"/>
                             <constraint firstItem="wFL-Fw-jvE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g08-Up-PeJ"/>
                             <constraint firstItem="BCQ-WX-qct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="gHw-yJ-B5u"/>
                             <constraint firstItem="pm8-ba-Nx8" firstAttribute="top" secondItem="aYz-fh-O65" secondAttribute="bottom" constant="20" id="hnH-Bc-i9o"/>
+                            <constraint firstItem="q7S-V3-htq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mCM-nt-RHE"/>
+                            <constraint firstItem="bHa-JN-FX9" firstAttribute="centerX" secondItem="aYz-fh-O65" secondAttribute="centerX" id="sfN-y5-OLw"/>
                             <constraint firstItem="u64-fX-zwo" firstAttribute="top" secondItem="pm8-ba-Nx8" secondAttribute="bottom" constant="20" id="vmE-hz-fSp"/>
                             <constraint firstItem="BCQ-WX-qct" firstAttribute="top" secondItem="wFL-Fw-jvE" secondAttribute="bottom" constant="20" id="yCh-ld-pHb"/>
+                            <constraint firstItem="Vzi-vz-1Wo" firstAttribute="top" secondItem="p1h-Mi-mvO" secondAttribute="bottom" constant="20" id="zqN-1g-YYY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myActivityIndicator" destination="bHa-JN-FX9" id="fPf-wI-pwA"/>
                         <outlet property="myButton" destination="q7S-V3-htq" id="YBO-oR-GDV"/>
                         <outlet property="myPageControl" destination="pm8-ba-Nx8" id="2pA-QE-BPj"/>
                         <outlet property="myPickerView" destination="aYz-fh-O65" id="hmY-Tl-4sS"/>
+                        <outlet property="myProgressView" destination="Vzi-vz-1Wo" id="O0B-9U-q4W"/>
                         <outlet property="mySegmentedControl" destination="u64-fX-zwo" id="eGA-8D-l9b"/>
                         <outlet property="mySlider" destination="wFL-Fw-jvE" id="0pJ-yZ-ATz"/>
                         <outlet property="myStepper" destination="BCQ-WX-qct" id="x14-DN-dCT"/>
