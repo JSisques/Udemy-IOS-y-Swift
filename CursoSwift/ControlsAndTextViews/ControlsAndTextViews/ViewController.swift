@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
+    @IBOutlet weak var mySegmentedControl: UISegmentedControl!
     
     //Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
@@ -35,6 +36,14 @@ class ViewController: UIViewController {
         myPageControl.currentPageIndicatorTintColor = .blue
         myPageControl.pageIndicatorTintColor = .lightGray
         
+        //Segmented Control
+        //Quitamos los segmentos predeterminados
+        mySegmentedControl.removeAllSegments()
+        for (index, value) in myPickerViewValues.enumerated(){
+            mySegmentedControl.insertSegment(withTitle: value, at: index, animated: true)
+        }
+        
+        
     }
     
     //Actions
@@ -49,6 +58,14 @@ class ViewController: UIViewController {
     @IBAction func myPageControlAction(_ sender: Any) {
         myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
         let myString = myPickerViewValues[myPageControl.currentPage]
+        myButton.setTitle(myString, for: .normal)
+        mySegmentedControl.selectedSegmentIndex = myPageControl.currentPage
+    }
+    
+    @IBAction func mySegmentedControlAction(_ sender: Any) {
+        myPickerView.selectRow(mySegmentedControl.selectedSegmentIndex, inComponent: 0, animated: true)
+        myPageControl.currentPage = mySegmentedControl.selectedSegmentIndex
+        let myString = myPickerViewValues[mySegmentedControl.selectedSegmentIndex]
         myButton.setTitle(myString, for: .normal)
     }
 }
@@ -79,6 +96,8 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate{
         myButton.setTitle(myString, for: .normal)
         
         myPageControl.currentPage = row
+        
+        mySegmentedControl.selectedSegmentIndex = row
     }
     
     
