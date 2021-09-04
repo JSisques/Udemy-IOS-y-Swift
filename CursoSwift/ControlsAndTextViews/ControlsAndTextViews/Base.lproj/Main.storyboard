@@ -54,6 +54,12 @@
                                     <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="I1Z-3S-9iL"/>
                                 </connections>
                             </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p1h-Mi-mvO">
+                                <rect key="frame" x="183" y="646" width="49" height="31"/>
+                                <connections>
+                                    <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qJP-fT-B10"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,6 +68,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u64-fX-zwo" secondAttribute="trailing" constant="20" id="4E0-Pl-30F"/>
                             <constraint firstItem="wFL-Fw-jvE" firstAttribute="top" secondItem="u64-fX-zwo" secondAttribute="bottom" constant="20" id="4gh-mc-rbA"/>
                             <constraint firstItem="aYz-fh-O65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8EB-Pk-HqW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p1h-Mi-mvO" secondAttribute="trailing" constant="184" id="9r6-k2-yeh"/>
+                            <constraint firstItem="p1h-Mi-mvO" firstAttribute="top" secondItem="BCQ-WX-qct" secondAttribute="bottom" constant="20" id="Bhb-Ld-DTk"/>
+                            <constraint firstItem="p1h-Mi-mvO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="F4B-iL-FdS"/>
                             <constraint firstItem="aYz-fh-O65" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GQe-K1-vcW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BCQ-WX-qct" secondAttribute="trailing" constant="160" id="KHI-Vh-kgL"/>
                             <constraint firstItem="pm8-ba-Nx8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LA7-Zr-b6r"/>
@@ -85,6 +94,7 @@
                         <outlet property="mySegmentedControl" destination="u64-fX-zwo" id="eGA-8D-l9b"/>
                         <outlet property="mySlider" destination="wFL-Fw-jvE" id="0pJ-yZ-ATz"/>
                         <outlet property="myStepper" destination="BCQ-WX-qct" id="x14-DN-dCT"/>
+                        <outlet property="mySwitch" destination="p1h-Mi-mvO" id="C5J-Ms-3Bg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
