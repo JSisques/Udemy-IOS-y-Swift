@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var mySwitchLabel: UILabel!
     @IBOutlet weak var myTextField: UITextField!
+    @IBOutlet weak var myTextView: UITextView!
     
     //Variables
     private let myPickerViewValues = ["Uno", "Dos", "Tres", "Cuatro", "Cinco"]
@@ -79,9 +80,13 @@ class ViewController: UIViewController {
         mySwitchLabel.text = "Está apagado"
         
         //Text Field
-        myTextField.textColor = .brown
-        myTextField.placeholder = "Escribe algo..."
-        myTextField.delegate = self
+        //myTextField.textColor = .brown
+        //myTextField.placeholder = "Escribe algo..."
+        //myTextField.delegate = self
+        
+        //Text View
+        myTextView.textColor = .darkGray
+        myTextView.delegate = self
     }
     
     //Actions
@@ -91,6 +96,8 @@ class ViewController: UIViewController {
         } else{
             myButton.backgroundColor = .blue
         }
+        
+        myTextView.resignFirstResponder()
     }
     
     @IBAction func myPageControlAction(_ sender: Any) {
@@ -249,5 +256,16 @@ extension ViewController: UITextFieldDelegate{
     
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         myButton.setTitle(myTextField.text, for: .normal)
+    }
+}
+
+extension ViewController: UITextViewDelegate{
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        //myTextField.isHidden = true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        //myTextField.isHidden = false
     }
 }
