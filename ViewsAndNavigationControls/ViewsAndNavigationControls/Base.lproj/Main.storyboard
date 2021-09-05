@@ -41,6 +41,12 @@
                                     <constraint firstAttribute="height" constant="2" id="9Ca-0w-eWL"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="UfT-Ub-EWA">
+                                <rect key="frame" x="0.0" y="246" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aoD-3L-a7y"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,11 +55,15 @@
                             <constraint firstItem="mC7-Aq-4xS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9a0-32-3cB"/>
                             <constraint firstItem="avm-YA-4sy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DT9-GM-cXH"/>
                             <constraint firstItem="mC7-Aq-4xS" firstAttribute="top" secondItem="avm-YA-4sy" secondAttribute="bottom" id="IKm-p5-IRl"/>
+                            <constraint firstItem="UfT-Ub-EWA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uco-2f-ngc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mC7-Aq-4xS" secondAttribute="trailing" id="YlI-OS-S8q"/>
+                            <constraint firstItem="UfT-Ub-EWA" firstAttribute="top" secondItem="mC7-Aq-4xS" secondAttribute="bottom" id="fnD-6Q-0ti"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UfT-Ub-EWA" secondAttribute="trailing" id="gqn-Lw-wdn"/>
                             <constraint firstItem="avm-YA-4sy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mmc-SH-Mw8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="myImageView" destination="UfT-Ub-EWA" id="liw-ec-M7o"/>
                         <outlet property="myView" destination="avm-YA-4sy" id="PoP-6h-aAe"/>
                     </connections>
                 </viewController>
@@ -63,6 +73,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pikachu" width="1191" height="1254"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
