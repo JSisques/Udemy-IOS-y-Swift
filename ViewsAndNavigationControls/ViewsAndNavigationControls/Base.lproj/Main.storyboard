@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewsAndNavigationControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avm-YA-4sy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxi-q2-PbI">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstItem="Kxi-q2-PbI" firstAttribute="top" secondItem="avm-YA-4sy" secondAttribute="top" constant="8" id="15j-PX-Zmj"/>
+                                    <constraint firstAttribute="height" constant="200" id="WGe-8v-Iyk"/>
+                                    <constraint firstItem="Kxi-q2-PbI" firstAttribute="leading" secondItem="avm-YA-4sy" secondAttribute="leading" id="pvg-lt-acS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kxi-q2-PbI" secondAttribute="trailing" id="wxf-Cb-IwD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mC7-Aq-4xS">
+                                <rect key="frame" x="0.0" y="244" width="414" height="2"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="9Ca-0w-eWL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="avm-YA-4sy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1FL-J8-rPj"/>
+                            <constraint firstItem="mC7-Aq-4xS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9a0-32-3cB"/>
+                            <constraint firstItem="avm-YA-4sy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DT9-GM-cXH"/>
+                            <constraint firstItem="mC7-Aq-4xS" firstAttribute="top" secondItem="avm-YA-4sy" secondAttribute="bottom" id="IKm-p5-IRl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mC7-Aq-4xS" secondAttribute="trailing" id="YlI-OS-S8q"/>
+                            <constraint firstItem="avm-YA-4sy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mmc-SH-Mw8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="avm-YA-4sy" id="PoP-6h-aAe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
