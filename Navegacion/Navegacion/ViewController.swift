@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnOrange(_ sender: Any) {
+        performSegue(withIdentifier: "VCOrange", sender: self)
+    }
+    
+    @IBAction func btnPurple(_ sender: Any) {
+        performSegue(withIdentifier: "VCPurple", sender: self)
+    }
+    
+    @IBAction func btnGreen(_ sender: Any) {
+        performSegue(withIdentifier: "VCGreen", sender: self)
+    }
 }
 

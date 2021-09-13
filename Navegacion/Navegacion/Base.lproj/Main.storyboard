@@ -17,24 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S2-Rx-h8E">
-                                <rect key="frame" x="180.5" y="433" width="53" height="30"/>
+                                <rect key="frame" x="154" y="422.5" width="106" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Naranja"/>
                                 <connections>
-                                    <segue destination="s4a-cu-Dvk" kind="show" id="PBW-ys-ddG"/>
+                                    <action selector="btnOrange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zS-UD-fAt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-x9-8cj">
-                                <rect key="frame" x="20" y="483" width="374" height="30"/>
+                                <rect key="frame" x="20" y="493.5" width="374" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Morado"/>
                                 <connections>
-                                    <segue destination="TpS-Av-UEV" kind="show" id="K3a-8Z-PHa"/>
+                                    <action selector="btnPurple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hR7-xE-adJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWG-g0-Ti8">
-                                <rect key="frame" x="20" y="533" width="374" height="30"/>
+                                <rect key="frame" x="20" y="564.5" width="374" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Verde"/>
                                 <connections>
-                                    <segue destination="aEN-CK-M7n" kind="show" id="n8H-Zz-FmR"/>
+                                    <action selector="btnGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mpQ-gb-I9Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,15 +57,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="mOx-YI-zcy"/>
+                    <connections>
+                        <segue destination="s4a-cu-Dvk" kind="show" identifier="VCOrange" id="7vx-cB-u18"/>
+                        <segue destination="TpS-Av-UEV" kind="show" identifier="VCPurple" id="qvh-db-8tF"/>
+                        <segue destination="aEN-CK-M7n" kind="show" identifier="VCGreen" id="w3R-UI-JG4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="89"/>
+            <point key="canvasLocation" x="-42" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Orange View Controller-->
         <scene sceneID="E0r-Da-Vva">
             <objects>
-                <viewController id="s4a-cu-Dvk" sceneMemberID="viewController">
+                <viewController id="s4a-cu-Dvk" customClass="OrangeViewController" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Jn-D1-NBu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="903" y="-631"/>
         </scene>
-        <!--View Controller-->
+        <!--Purple View Controller-->
         <scene sceneID="aTT-8Y-sIY">
             <objects>
-                <viewController id="TpS-Av-UEV" sceneMemberID="viewController">
+                <viewController id="TpS-Av-UEV" customClass="PurpleViewController" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O7l-Cb-bmC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="903" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Green View Controller-->
         <scene sceneID="Raq-Xn-oQD">
             <objects>
-                <viewController id="aEN-CK-M7n" sceneMemberID="viewController">
+                <viewController id="aEN-CK-M7n" customClass="GreenViewController" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eos-Gm-6nh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
