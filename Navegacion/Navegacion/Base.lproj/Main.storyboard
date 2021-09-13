@@ -15,22 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S2-Rx-h8E">
+                                <rect key="frame" x="180.5" y="433" width="53" height="30"/>
+                                <state key="normal" title="Naranja"/>
+                                <connections>
+                                    <segue destination="s4a-cu-Dvk" kind="show" id="PBW-ys-ddG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gf-x9-8cj">
+                                <rect key="frame" x="20" y="483" width="374" height="30"/>
+                                <state key="normal" title="Morado"/>
+                                <connections>
+                                    <segue destination="TpS-Av-UEV" kind="show" id="K3a-8Z-PHa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWG-g0-Ti8">
+                                <rect key="frame" x="20" y="533" width="374" height="30"/>
+                                <state key="normal" title="Verde"/>
+                                <connections>
+                                    <segue destination="aEN-CK-M7n" kind="show" id="n8H-Zz-FmR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="3gf-x9-8cj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="63b-jp-v8g"/>
+                            <constraint firstItem="qWG-g0-Ti8" firstAttribute="top" secondItem="3gf-x9-8cj" secondAttribute="bottom" constant="20" id="6go-bf-hmc"/>
+                            <constraint firstItem="qWG-g0-Ti8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A98-0F-nsV"/>
+                            <constraint firstItem="3gf-x9-8cj" firstAttribute="top" secondItem="0S2-Rx-h8E" secondAttribute="bottom" constant="20" id="AYd-Ux-xdN"/>
+                            <constraint firstItem="0S2-Rx-h8E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H7n-5g-8l3"/>
+                            <constraint firstItem="3gf-x9-8cj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NQa-Ay-DvV"/>
+                            <constraint firstItem="qWG-g0-Ti8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fBb-7C-zJH"/>
+                            <constraint firstItem="0S2-Rx-h8E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcA-pD-eGU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qWG-g0-Ti8" secondAttribute="trailing" constant="20" id="l5H-pE-i3L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3gf-x9-8cj" secondAttribute="trailing" constant="20" id="l5Q-DQ-QuP"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Menu" id="mOx-YI-zcy">
-                        <barButtonItem key="rightBarButtonItem" title="Naranja" id="2Ha-Lv-eqR">
-                            <connections>
-                                <segue destination="s4a-cu-Dvk" kind="show" id="Uu3-cD-xNs"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Menu" id="mOx-YI-zcy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="35" y="89"/>
         </scene>
-        <!--Naranja-->
+        <!--View Controller-->
         <scene sceneID="E0r-Da-Vva">
             <objects>
                 <viewController id="s4a-cu-Dvk" sceneMemberID="viewController">
@@ -40,19 +69,13 @@
                         <viewLayoutGuide key="safeArea" id="Ym5-LN-Xqq"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Naranja" id="kwm-p1-WYE">
-                        <barButtonItem key="rightBarButtonItem" title="Morado" id="RWY-tk-0Nv">
-                            <connections>
-                                <segue destination="TpS-Av-UEV" kind="show" id="b0n-9u-DNy"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="kwm-p1-WYE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CN-tk-o2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="88"/>
+            <point key="canvasLocation" x="903" y="-631"/>
         </scene>
-        <!--Morado-->
+        <!--View Controller-->
         <scene sceneID="aTT-8Y-sIY">
             <objects>
                 <viewController id="TpS-Av-UEV" sceneMemberID="viewController">
@@ -62,19 +85,13 @@
                         <viewLayoutGuide key="safeArea" id="g0d-Rc-Pag"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Morado" id="hpg-E6-15L">
-                        <barButtonItem key="rightBarButtonItem" title="Verde" id="2Rq-2v-NMw">
-                            <connections>
-                                <segue destination="aEN-CK-M7n" kind="show" id="MIL-cN-ppt"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="hpg-E6-15L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWj-ge-KYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1706" y="88"/>
+            <point key="canvasLocation" x="903" y="88"/>
         </scene>
-        <!--Verde-->
+        <!--View Controller-->
         <scene sceneID="Raq-Xn-oQD">
             <objects>
                 <viewController id="aEN-CK-M7n" sceneMemberID="viewController">
@@ -96,11 +113,11 @@
                             <constraint firstItem="msy-wW-LhX" firstAttribute="centerX" secondItem="Eos-Gm-6nh" secondAttribute="centerX" id="F9P-Mz-npy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Verde" id="roM-dt-geD"/>
+                    <navigationItem key="navigationItem" id="roM-dt-geD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5a-HD-Emh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="88"/>
+            <point key="canvasLocation" x="903" y="843"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ul8-k1-Wds">
