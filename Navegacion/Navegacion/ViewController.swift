@@ -15,35 +15,38 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnOrange(_ sender: Any) {
-        performSegue(withIdentifier: "VCOrange", sender: self)
+        goTo(id: "VCOrange")
     }
     
     @IBAction func btnPurple(_ sender: Any) {
-        performSegue(withIdentifier: "VCPurple", sender: self)
+        goTo(id: "VCPurple")
     }
     
     @IBAction func btnGreen(_ sender: Any) {
-        performSegue(withIdentifier: "VCGreen", sender: self)
+        goTo(id: "VCGreen")
+    }
+    
+    private func goTo(id: String){
+        performSegue(withIdentifier: id, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "VCOrange"{
             
-            if let destiny = segue.destination as? OrangeViewController{
+            if let destiny = segue.destination as? PurpleViewController{
                 destiny.selfTitle = "Naranja"
-            }
+                destiny.color = .orange}
             
         } else if segue.identifier == "VCGreen"{
             
-            if let destiny = segue.destination as? GreenViewController{
-                destiny.selfTitle = "Verde"
-            }
-            
-        } else if segue.identifier == "VCPurple"{
             if let destiny = segue.destination as? PurpleViewController{
-                destiny.selfTitle = "Morado"
-            }
+                destiny.selfTitle = "Verde"
+                destiny.color = .green}
+            }else if segue.identifier == "VCPurple"{
+                if let destiny = segue.destination as? PurpleViewController{
+                    destiny.selfTitle = "Morado"
+                    destiny.color = .purple}
         }
     }
 }

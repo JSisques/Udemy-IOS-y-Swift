@@ -10,12 +10,17 @@ import UIKit
 class PurpleViewController: UIViewController {
     
     var selfTitle: String?
+    var color: UIColor?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let secureTitle = selfTitle{
             self.title = selfTitle
+        }
+        
+        if let secureColour = color{
+            self.view.backgroundColor = color
         }
     }
 
