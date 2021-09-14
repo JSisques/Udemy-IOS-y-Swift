@@ -10,6 +10,7 @@ import UIKit
 class MyCustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myLabel2: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
    
     override func awakeFromNib() {
@@ -18,6 +19,8 @@ class MyCustomTableViewCell: UITableViewCell {
         // Codigo que se ejecutara a la hora de crear una celda
         myLabel.font = UIFont.boldSystemFont(ofSize: 20)
         myLabel.textColor = .blue
+        //Para que tenga lineas infinitas
+        myLabel2.numberOfLines = 0
         
         backgroundColor = .gray
     }

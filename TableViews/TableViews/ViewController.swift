@@ -47,7 +47,7 @@ extension ViewController: UITableViewDataSource{
             return 50
         }
         
-        return 150
+        return UITableView.automaticDimension
         
     }
     
@@ -75,6 +75,10 @@ extension ViewController: UITableViewDataSource{
             
             //Para pintar la celda custom por primera vez
             var cell = tableView.dequeueReusableCell(withIdentifier: "mycustomcell", for: indexPath) as? MyCustomTableViewCell
+            
+            if indexPath.row == 2{
+                cell?.myLabel2.text = "saffdqrfwrfg wgrgwergwgghty jyrhsdafs wegrwrgw gwrgwegw grwgwgwg"
+            }
             
             cell?.myLabel.text = String(indexPath.row + 1)
             
