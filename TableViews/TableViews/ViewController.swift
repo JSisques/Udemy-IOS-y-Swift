@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         myTableView.delegate = self
         
         //Para eliminar las celdas vacias que genera debajo
-        myTableView.tableFooterView = UIView()
+        //myTableView.tableFooterView = UIView()
         
         //Añadimos la celda custom
         myTableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
@@ -30,6 +30,33 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDataSource{
+    
+    //Para modificar el texto de la cabecera segun la seccion
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0{
+            return "Celdas simples"
+        }
+        return "Celdas personalizadas"
+    }
+    
+    //Para utilizar una vista custom como cabecera
+    /*
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+    }
+ */
+    
+    //Definir la altura de la cabecera
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if section == 0{
+            return "Footer Celdas simples"
+        }
+        return "Footer Celdas personalizadas"
+    }
     
     //Para indicar cuantas celdas tendrá nuestra tabla
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
