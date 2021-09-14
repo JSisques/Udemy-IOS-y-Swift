@@ -12,7 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     private let myCountires = ["España", "Mexico", "Argentina", "Chile", "Brasil", "Italia"]
-    
+    //Para sacar la mitad del ancho de la pantalla
+    private let myCellWitdh = UIScreen.main.bounds.width / 2
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,5 +56,13 @@ extension ViewController: UICollectionViewDelegate{
     //Para detectar eventos al seleccionar
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("\(indexPath.section) --> \(indexPath.row) \(myCountires[indexPath.row])")
+    }
+}
+
+//Para la organizacion de las celdas
+extension ViewController: UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: myCellWitdh, height: myCellWitdh)
     }
 }
