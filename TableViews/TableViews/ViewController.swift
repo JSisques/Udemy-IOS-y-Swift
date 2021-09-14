@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         
         //Para eliminar las celdas vacias que genera debajo
         myTableView.tableFooterView = UIView()
+        
+        //Añadimos la celda custom
+        myTableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
     }
 
 
@@ -33,25 +36,54 @@ extension ViewController: UITableViewDataSource{
         return myCountries.count
     }
     
+    //Indica el numero de secciones que tiene la tabla
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    //Para modificar la altura de la celda
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0{
+            return 50
+        }
+        
+        return 150
+        
+    }
+    
     //Para definir el contenido de cada una de las celdas
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //Para poder reutilizar las celdas, hacer siempre
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        
-        //Si la celda no existe la creamos
-        if cell == nil{
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-            cell?.backgroundColor = .gray
-            cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+        //Si estamos en la seccion 1
+        if indexPath.section == 0{
+            //Para poder reutilizar las celdas, hacer siempre
+            var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
             
-            //Para que salga el hover
-            cell?.accessoryType = .disclosureIndicator
+            //Si la celda no existe la creamos
+            if cell == nil{
+                cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+                cell?.backgroundColor = .gray
+                cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+                
+                //Para que salga el hover
+                cell?.accessoryType = .disclosureIndicator
+            }
+            
+            cell!.textLabel?.text = myCountries[indexPath.row]
+            return cell!
+        } else{
+            
+            //Para pintar la celda custom por primera vez
+            var cell = tableView.dequeueReusableCell(withIdentifier: "mycustomcell", for: indexPath) as? MyCustomTableViewCell
+            
+            cell?.myLabel.text = String(indexPath.row + 1)
+            
+            return cell!
         }
         
-        cell!.textLabel?.text = myCountries[indexPath.row]
         
-        return cell!
+        
+        
     }
     
     
