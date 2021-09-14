@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         myTableView.dataSource = self
+        myTableView.delegate = self
         
         //Para eliminar las celdas vacias que genera debajo
         myTableView.tableFooterView = UIView()
@@ -43,6 +44,9 @@ extension ViewController: UITableViewDataSource{
             cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
             cell?.backgroundColor = .gray
             cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+            
+            //Para que salga el hover
+            cell?.accessoryType = .disclosureIndicator
         }
         
         cell!.textLabel?.text = myCountries[indexPath.row]
@@ -50,5 +54,13 @@ extension ViewController: UITableViewDataSource{
         return cell!
     }
     
+    
+}
+
+extension ViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(myCountries[indexPath.row])
+    }
     
 }
