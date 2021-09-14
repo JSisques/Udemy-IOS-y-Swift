@@ -51,4 +51,8 @@ extension ViewController: UICollectionViewDataSource{
 
 extension ViewController: UICollectionViewDelegate{
     
+    //Para detectar eventos al seleccionar
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("\(indexPath.section) --> \(indexPath.row) \(myCountires[indexPath.row])")
+    }
 }
