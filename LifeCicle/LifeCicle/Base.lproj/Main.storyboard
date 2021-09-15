@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="25n-G7-Oue">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -30,14 +30,17 @@
                             <constraint firstItem="wzo-6z-lX2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fOe-TH-QdK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5bP-XS-PNd"/>
-                    <connections>
-                        <segue destination="ZWN-5I-xwB" kind="show" id="lbo-g1-oEO"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="5bP-XS-PNd">
+                        <barButtonItem key="rightBarButtonItem" title="View #2" id="zgZ-rB-g1Z">
+                            <connections>
+                                <segue destination="ZWN-5I-xwB" kind="show" id="Ka9-3L-Gpx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="88.392857142857139"/>
+            <point key="canvasLocation" x="967" y="88"/>
         </scene>
         <!--View Controller 2-->
         <scene sceneID="TEt-oF-SUp">
