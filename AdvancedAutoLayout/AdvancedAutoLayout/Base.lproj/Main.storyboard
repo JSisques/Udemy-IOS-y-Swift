@@ -16,14 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ya2-5i-MiY">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ya2-5i-MiY">
                                 <rect key="frame" x="16" y="104" width="382" height="742"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="456-pJ-Q6i">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="742"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="371"/>
                                         <state key="normal" title="Constraints de posicion"/>
                                         <connections>
                                             <segue destination="hNF-3S-8mp" kind="show" id="5Gt-HO-EVC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyy-l3-Gu1">
+                                        <rect key="frame" x="0.0" y="371" width="382" height="371"/>
+                                        <state key="normal" title="Constraints de altura y anchura"/>
+                                        <connections>
+                                            <segue destination="nxG-z7-gEh" kind="show" id="Kcz-ff-50n"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,6 +99,36 @@
             </objects>
             <point key="canvasLocation" x="1871.0144927536232" y="87.723214285714278"/>
         </scene>
+        <!--Constraints de altura y anchura-->
+        <scene sceneID="IJ6-NB-aVa">
+            <objects>
+                <viewController id="nxG-z7-gEh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Czt-bd-pHG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNc-Oa-PCh">
+                                <rect key="frame" x="16" y="104" width="200" height="300"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="StA-Ic-zrf"/>
+                                    <constraint firstAttribute="height" constant="300" id="UeZ-6j-Zf2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QtT-z8-I3y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yNc-Oa-PCh" firstAttribute="top" secondItem="QtT-z8-I3y" secondAttribute="top" constant="16" id="CTP-ct-46N"/>
+                            <constraint firstItem="yNc-Oa-PCh" firstAttribute="leading" secondItem="QtT-z8-I3y" secondAttribute="leading" constant="16" id="Ora-8d-IzI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de altura y anchura" id="bnQ-tC-a1F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdN-B8-uZV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="843"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zve-gA-K6O">
             <objects>
@@ -123,6 +160,9 @@
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
