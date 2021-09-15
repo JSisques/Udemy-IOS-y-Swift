@@ -20,52 +20,59 @@
                                 <rect key="frame" x="16" y="104" width="382" height="742"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="456-pJ-Q6i">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="106"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="93"/>
                                         <state key="normal" title="Constraints de posicion"/>
                                         <connections>
                                             <segue destination="hNF-3S-8mp" kind="show" id="5Gt-HO-EVC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyy-l3-Gu1">
-                                        <rect key="frame" x="0.0" y="106" width="382" height="106"/>
+                                        <rect key="frame" x="0.0" y="93" width="382" height="92.5"/>
                                         <state key="normal" title="Constraints de altura y anchura"/>
                                         <connections>
                                             <segue destination="nxG-z7-gEh" kind="show" id="Kcz-ff-50n"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUm-e9-jLW">
-                                        <rect key="frame" x="0.0" y="212" width="382" height="106"/>
+                                        <rect key="frame" x="0.0" y="185.5" width="382" height="93"/>
                                         <state key="normal" title="Modificar constraints por código"/>
                                         <connections>
                                             <segue destination="9Nv-h0-RfN" kind="show" id="LZJ-Oj-1bQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ip-Gm-nC5">
-                                        <rect key="frame" x="0.0" y="318" width="382" height="106"/>
+                                        <rect key="frame" x="0.0" y="278.5" width="382" height="92.5"/>
                                         <state key="normal" title="Crear constraints por código"/>
                                         <connections>
                                             <segue destination="zh0-Vp-eaH" kind="show" id="gO4-1z-dwX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7K-Vb-eye">
-                                        <rect key="frame" x="0.0" y="424" width="382" height="106"/>
+                                        <rect key="frame" x="0.0" y="371" width="382" height="93"/>
                                         <state key="normal" title="Constraints de igualdad"/>
                                         <connections>
                                             <segue destination="RHH-F1-0kf" kind="show" id="85t-ym-Bx1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaI-Q9-qM7">
-                                        <rect key="frame" x="0.0" y="530" width="382" height="106"/>
+                                        <rect key="frame" x="0.0" y="464" width="382" height="92.5"/>
                                         <state key="normal" title="Constraints de proporción"/>
                                         <connections>
                                             <segue destination="qSg-UR-rIa" kind="show" id="3dV-pJ-DS9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62o-Wk-i2w">
-                                        <rect key="frame" x="0.0" y="636" width="382" height="106"/>
+                                        <rect key="frame" x="0.0" y="556.5" width="382" height="93"/>
                                         <state key="normal" title="Constraints de centrado"/>
                                         <connections>
                                             <segue destination="mhj-FE-yWe" kind="show" id="beZ-3I-joT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXh-B3-oBE">
+                                        <rect key="frame" x="0.0" y="649.5" width="382" height="92.5"/>
+                                        <state key="normal" title="Constraints de alineación"/>
+                                        <connections>
+                                            <segue destination="gMh-u1-ZAd" kind="show" id="Tr8-8z-9Q3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -153,6 +160,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKb-Gj-Ek0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1800" y="877"/>
+        </scene>
+        <!--Constraints de alineación-->
+        <scene sceneID="bPK-qx-iCn">
+            <objects>
+                <viewController id="gMh-u1-ZAd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQv-ek-e8g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaL-EV-kx9">
+                                <rect key="frame" x="16" y="104" width="300" height="300"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Cjp-yw-3fL"/>
+                                    <constraint firstAttribute="width" constant="300" id="bgM-LC-Ahm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CB3-OM-EtY">
+                                <rect key="frame" x="216" y="304" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="nBh-On-5ci"/>
+                                    <constraint firstAttribute="height" constant="100" id="qc5-QZ-w29"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-Kc-hrf">
+                                <rect key="frame" x="66" y="646" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="adF-l2-5QV"/>
+                                    <constraint firstAttribute="width" constant="200" id="dV4-We-94s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wnr-RY-y7i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CB3-OM-EtY" firstAttribute="trailing" secondItem="qaL-EV-kx9" secondAttribute="trailing" id="FJQ-HU-IjK"/>
+                            <constraint firstItem="qaL-EV-kx9" firstAttribute="top" secondItem="wnr-RY-y7i" secondAttribute="top" constant="16" id="Rk9-oa-dqL"/>
+                            <constraint firstItem="CB3-OM-EtY" firstAttribute="bottom" secondItem="qaL-EV-kx9" secondAttribute="bottom" id="TDd-0g-qWM"/>
+                            <constraint firstItem="gOY-Kc-hrf" firstAttribute="centerX" secondItem="qaL-EV-kx9" secondAttribute="centerX" id="fxg-Ge-97C"/>
+                            <constraint firstItem="wnr-RY-y7i" firstAttribute="bottom" secondItem="gOY-Kc-hrf" secondAttribute="bottom" constant="16" id="iX2-Zx-uni"/>
+                            <constraint firstItem="qaL-EV-kx9" firstAttribute="leading" secondItem="wnr-RY-y7i" secondAttribute="leading" constant="16" id="sxf-2v-4aK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de alineación" id="UBv-b5-YFz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6z-qE-hXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2645" y="877"/>
         </scene>
         <!--Constraints de igualdad-->
         <scene sceneID="Dcj-0A-Bh8">
@@ -387,6 +444,9 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
