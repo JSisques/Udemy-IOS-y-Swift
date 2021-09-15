@@ -15,6 +15,7 @@
 		593BE01D26F0A859005AD0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593BE01B26F0A859005AD0AC /* LaunchScreen.storyboard */; };
 		599D1C4426F1E7340067A6EE /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D1C4326F1E7340067A6EE /* Car.swift */; };
 		599D1C4626F1ED5F0067A6EE /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D1C4526F1ED5F0067A6EE /* CarViewController.swift */; };
+		599D1C4826F1F2480067A6EE /* ElectricCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599D1C4726F1F2480067A6EE /* ElectricCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		593BE01E26F0A859005AD0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		599D1C4326F1E7340067A6EE /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		599D1C4526F1ED5F0067A6EE /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		599D1C4726F1F2480067A6EE /* ElectricCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				593BE01E26F0A859005AD0AC /* Info.plist */,
 				599D1C4326F1E7340067A6EE /* Car.swift */,
 				599D1C4526F1ED5F0067A6EE /* CarViewController.swift */,
+				599D1C4726F1F2480067A6EE /* ElectricCar.swift */,
 			);
 			path = CarFactory;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				593BE01126F0A858005AD0AC /* AppDelegate.swift in Sources */,
 				599D1C4426F1E7340067A6EE /* Car.swift in Sources */,
 				593BE01326F0A858005AD0AC /* SceneDelegate.swift in Sources */,
+				599D1C4826F1F2480067A6EE /* ElectricCar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

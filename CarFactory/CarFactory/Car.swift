@@ -11,7 +11,7 @@ import UIKit
 class Car{
     
     var color: UIColor?
-    var wheelNumber: Int?
+    let wheelNumber = 3
     var price: Double?
     
     func startEngine() -> Bool{
@@ -20,6 +20,10 @@ class Car{
     
     func stopEngine() -> Bool{
         return false
+    }
+    
+    func acelerate() -> String {
+        return "I´m acelerating"
     }
     
 }
