@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59703F3126F27180001E2AB6 /* ModifyConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59703F3026F27180001E2AB6 /* ModifyConstraintsViewController.swift */; };
+		59703F3326F27397001E2AB6 /* CreateConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59703F3226F27397001E2AB6 /* CreateConstraintsViewController.swift */; };
 		59820E8826F25CED00A22846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59820E8726F25CED00A22846 /* AppDelegate.swift */; };
 		59820E8A26F25CED00A22846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59820E8926F25CED00A22846 /* SceneDelegate.swift */; };
 		59820E8C26F25CED00A22846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59820E8B26F25CED00A22846 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		59703F3026F27180001E2AB6 /* ModifyConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyConstraintsViewController.swift; sourceTree = "<group>"; };
+		59703F3226F27397001E2AB6 /* CreateConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateConstraintsViewController.swift; sourceTree = "<group>"; };
 		59820E8426F25CED00A22846 /* AdvancedAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59820E8726F25CED00A22846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59820E8926F25CED00A22846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				59820E9226F25CED00A22846 /* LaunchScreen.storyboard */,
 				59820E9526F25CED00A22846 /* Info.plist */,
 				59703F3026F27180001E2AB6 /* ModifyConstraintsViewController.swift */,
+				59703F3226F27397001E2AB6 /* CreateConstraintsViewController.swift */,
 			);
 			path = AdvancedAutoLayout;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59703F3326F27397001E2AB6 /* CreateConstraintsViewController.swift in Sources */,
 				59820E8C26F25CED00A22846 /* ViewController.swift in Sources */,
 				59820E8826F25CED00A22846 /* AppDelegate.swift in Sources */,
 				59820E8A26F25CED00A22846 /* SceneDelegate.swift in Sources */,
