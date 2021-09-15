@@ -131,6 +131,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uaG-ND-2Yd"/>
                     <connections>
+                        <outlet property="imgView" destination="nxw-IL-4e8" id="3ez-6G-kF2"/>
                         <outlet property="lblInfo" destination="byS-PN-kGM" id="X2V-fA-j2S"/>
                     </connections>
                 </viewController>

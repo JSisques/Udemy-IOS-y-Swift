@@ -9,6 +9,7 @@ import UIKit
 
 class CarViewController: UIViewController {
 
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var lblInfo: UILabel!
     
     var carType: Int?
@@ -23,12 +24,14 @@ class CarViewController: UIViewController {
             car = Car()
             car?.color = UIColor.black
             car?.price = 8000.99
+            imgView.image = UIImage(named: "ferrari")
             print("Tipo de automovil 0")
         case 1:
             electricCar = ElectricCar()
             electricCar?.color = UIColor.red
             electricCar?.price = 10000.95
             electricCar?.batery = 67
+            imgView.image = UIImage(named: "mazda_electric")
             print("Tipo de automovil 1")
         default:
             print("Error")
