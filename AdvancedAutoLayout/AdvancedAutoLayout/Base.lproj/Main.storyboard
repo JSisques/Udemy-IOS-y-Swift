@@ -20,66 +20,73 @@
                                 <rect key="frame" x="16" y="104" width="382" height="742"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="456-pJ-Q6i">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="74"/>
                                         <state key="normal" title="Constraints de posicion"/>
                                         <connections>
                                             <segue destination="hNF-3S-8mp" kind="show" id="5Gt-HO-EVC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyy-l3-Gu1">
-                                        <rect key="frame" x="0.0" y="82.5" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="74" width="382" height="74.5"/>
                                         <state key="normal" title="Constraints de altura y anchura"/>
                                         <connections>
                                             <segue destination="nxG-z7-gEh" kind="show" id="Kcz-ff-50n"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUm-e9-jLW">
-                                        <rect key="frame" x="0.0" y="165" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="148.5" width="382" height="74"/>
                                         <state key="normal" title="Modificar constraints por código"/>
                                         <connections>
                                             <segue destination="9Nv-h0-RfN" kind="show" id="LZJ-Oj-1bQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ip-Gm-nC5">
-                                        <rect key="frame" x="0.0" y="247.5" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="222.5" width="382" height="74.5"/>
                                         <state key="normal" title="Crear constraints por código"/>
                                         <connections>
                                             <segue destination="zh0-Vp-eaH" kind="show" id="gO4-1z-dwX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7K-Vb-eye">
-                                        <rect key="frame" x="0.0" y="330" width="382" height="82"/>
+                                        <rect key="frame" x="0.0" y="297" width="382" height="74"/>
                                         <state key="normal" title="Constraints de igualdad"/>
                                         <connections>
                                             <segue destination="RHH-F1-0kf" kind="show" id="85t-ym-Bx1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaI-Q9-qM7">
-                                        <rect key="frame" x="0.0" y="412" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="371" width="382" height="74"/>
                                         <state key="normal" title="Constraints de proporción"/>
                                         <connections>
                                             <segue destination="qSg-UR-rIa" kind="show" id="3dV-pJ-DS9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62o-Wk-i2w">
-                                        <rect key="frame" x="0.0" y="494.5" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="445" width="382" height="74.5"/>
                                         <state key="normal" title="Constraints de centrado"/>
                                         <connections>
                                             <segue destination="mhj-FE-yWe" kind="show" id="beZ-3I-joT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXh-B3-oBE">
-                                        <rect key="frame" x="0.0" y="577" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="519.5" width="382" height="74"/>
                                         <state key="normal" title="Constraints de alineación"/>
                                         <connections>
                                             <segue destination="gMh-u1-ZAd" kind="show" id="Tr8-8z-9Q3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGQ-ck-vRy">
-                                        <rect key="frame" x="0.0" y="659.5" width="382" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="593.5" width="382" height="74.5"/>
                                         <state key="normal" title="Huggin, Compression y Priority"/>
                                         <connections>
                                             <segue destination="a6I-n0-eS1" kind="show" id="T30-K3-xLx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjX-x5-T88">
+                                        <rect key="frame" x="0.0" y="668" width="382" height="74"/>
+                                        <state key="normal" title="Trail variations"/>
+                                        <connections>
+                                            <segue destination="fnp-tC-qRU" kind="show" id="aA2-Uw-vt4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -283,6 +290,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aW0-Nb-vTZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3480" y="877"/>
+        </scene>
+        <!--Trail variations-->
+        <scene sceneID="Gwx-Yc-q18">
+            <objects>
+                <viewController id="fnp-tC-qRU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bBc-Ty-bTb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rne-h9-iEH">
+                                <rect key="frame" x="16" y="104" width="382" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3b-H7-f2A">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xad-Gl-ooj">
+                                        <rect key="frame" x="0.0" y="150" width="382" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6Ve-YA-hJE">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1bp-pa-oDj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rne-h9-iEH" firstAttribute="top" secondItem="1bp-pa-oDj" secondAttribute="top" constant="16" id="Ci5-Rz-qKp"/>
+                            <constraint firstItem="rne-h9-iEH" firstAttribute="leading" secondItem="1bp-pa-oDj" secondAttribute="leading" constant="16" id="s1U-tt-ow7"/>
+                            <constraint firstItem="1bp-pa-oDj" firstAttribute="trailing" secondItem="rne-h9-iEH" secondAttribute="trailing" constant="16" id="yME-vM-1Rf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trail variations" id="tAu-YU-p3o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="trZ-Ny-R7Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4304" y="877"/>
         </scene>
         <!--Constraints de igualdad-->
         <scene sceneID="Dcj-0A-Bh8">
