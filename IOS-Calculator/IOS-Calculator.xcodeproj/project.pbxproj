@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		59A320A126F35BCE00AFF607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A320A026F35BCE00AFF607 /* AppDelegate.swift */; };
-		59A320A326F35BCE00AFF607 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A320A226F35BCE00AFF607 /* SceneDelegate.swift */; };
 		59A320AA26F35BCF00AFF607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A320A926F35BCF00AFF607 /* Assets.xcassets */; };
 		59A320AD26F35BCF00AFF607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A320AB26F35BCF00AFF607 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		59A3209D26F35BCE00AFF607 /* IOS-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A320A026F35BCE00AFF607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59A320A226F35BCE00AFF607 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		59A320A926F35BCF00AFF607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59A320AC26F35BCF00AFF607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59A320AE26F35BCF00AFF607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,12 +51,59 @@
 			isa = PBXGroup;
 			children = (
 				59A320A026F35BCE00AFF607 /* AppDelegate.swift */,
-				59A320A226F35BCE00AFF607 /* SceneDelegate.swift */,
+				59A320B826F35D6000AFF607 /* Supporting Files */,
+				59A320B726F35D5400AFF607 /* Util */,
+				59A320B626F35D4F00AFF607 /* Controller */,
+				59A320B526F35D4A00AFF607 /* View */,
+				59A320B426F35D4600AFF607 /* Model */,
 				59A320A926F35BCF00AFF607 /* Assets.xcassets */,
-				59A320AB26F35BCF00AFF607 /* LaunchScreen.storyboard */,
-				59A320AE26F35BCF00AFF607 /* Info.plist */,
 			);
 			path = "IOS-Calculator";
+			sourceTree = "<group>";
+		};
+		59A320B426F35D4600AFF607 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59A320B526F35D4A00AFF607 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59A320B926F35DFF00AFF607 /* Launch */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59A320B626F35D4F00AFF607 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		59A320B726F35D5400AFF607 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		59A320B826F35D6000AFF607 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59A320AE26F35BCF00AFF607 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59A320B926F35DFF00AFF607 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				59A320AB26F35BCF00AFF607 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +176,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A320A126F35BCE00AFF607 /* AppDelegate.swift in Sources */,
-				59A320A326F35BCE00AFF607 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZL99PQC29;
-				INFOPLIST_FILE = "IOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "IOS-Calculator/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZL99PQC29;
-				INFOPLIST_FILE = "IOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "IOS-Calculator/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
