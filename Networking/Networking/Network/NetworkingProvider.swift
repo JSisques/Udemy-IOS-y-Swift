@@ -52,4 +52,21 @@ final class NetworkingProvider{
             }
         }
     }
+    
+    func updateUser(id: Int, user: NewUser, success: @escaping (_ user: User) -> (), failure: @escaping (_ error: Error?) -> ()){
+        let url = "\(baseUrl)users/\(id)"
+        let headers: HTTPHeaders = [.authorization(bearerToken: token)]
+        
+        //Utilizamos JSONParameterEncoder para transformar el parametro en un json
+        AF.request(url, method: .put, parameters: user, encoder: JSONParameterEncoder.default, headers: headers).validate(statusCode: statusOk).responseDecodable(of: UserResponse.self, decoder: DateDecorder()){
+            response in
+            
+            //Comprobamos si los datos estan OK
+            if let user = response.value?.data, user.id != nil{
+                success(user)
+            } else{
+                failure(response.error)
+            }
+        }
+    }
 }

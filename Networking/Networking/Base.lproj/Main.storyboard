@@ -51,25 +51,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zn-2b-5MO">
+                                <rect key="frame" x="16" y="263" width="382" height="30"/>
+                                <state key="normal" title="Put User"/>
+                                <connections>
+                                    <action selector="putUser:" destination="sxA-E6-HIb" eventType="touchUpInside" id="u2j-nI-3fZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0M-P3-jSw">
+                                <rect key="frame" x="16" y="309" width="382" height="30"/>
+                                <state key="normal" title="Delete User"/>
+                                <connections>
+                                    <action selector="deleteUserAction:" destination="sxA-E6-HIb" eventType="touchUpInside" id="j4n-5I-boQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lUc-hC-317"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MXt-99-WJG" firstAttribute="centerX" secondItem="Jtv-Ct-TlX" secondAttribute="centerX" id="5ma-V8-88v"/>
                             <constraint firstItem="GIT-0J-0kk" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="7yf-ar-LyF"/>
+                            <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="g0M-P3-jSw" secondAttribute="trailing" constant="16" id="9BN-xp-jb0"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="0Ah-d1-VG2" secondAttribute="trailing" constant="16" id="9Z3-VM-YAL"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="GQj-p6-Asu" secondAttribute="trailing" constant="16" id="Bmf-Zo-2wv"/>
+                            <constraint firstItem="3Zn-2b-5MO" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="CNZ-sC-mQL"/>
+                            <constraint firstItem="3Zn-2b-5MO" firstAttribute="top" secondItem="GIT-0J-0kk" secondAttribute="bottom" constant="16" id="FPM-f4-GEV"/>
                             <constraint firstItem="MXt-99-WJG" firstAttribute="centerY" secondItem="Jtv-Ct-TlX" secondAttribute="centerY" id="Mv3-P4-vY2"/>
                             <constraint firstItem="GQj-p6-Asu" firstAttribute="top" secondItem="Bcr-rN-nj1" secondAttribute="bottom" constant="16" id="OjW-9c-aYy"/>
+                            <constraint firstItem="g0M-P3-jSw" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="SCa-I2-kc2"/>
                             <constraint firstItem="0Ah-d1-VG2" firstAttribute="top" secondItem="lUc-hC-317" secondAttribute="top" constant="16" id="Sjb-Pe-m9k"/>
                             <constraint firstItem="yGj-9c-P0V" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="aPp-h3-LXG"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="Bcr-rN-nj1" secondAttribute="trailing" constant="16" id="dvH-kv-7Di"/>
                             <constraint firstItem="0Ah-d1-VG2" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="g7x-wb-6ub"/>
+                            <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="3Zn-2b-5MO" secondAttribute="trailing" constant="16" id="oO5-zN-4aH"/>
                             <constraint firstItem="Bcr-rN-nj1" firstAttribute="top" secondItem="0Ah-d1-VG2" secondAttribute="bottom" constant="16" id="oXo-7H-6mn"/>
                             <constraint firstItem="GIT-0J-0kk" firstAttribute="top" secondItem="yGj-9c-P0V" secondAttribute="bottom" constant="16" id="pXc-J8-x3I"/>
                             <constraint firstItem="Bcr-rN-nj1" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="qUT-JE-ogk"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="GIT-0J-0kk" secondAttribute="trailing" constant="16" id="s0A-FS-Ehf"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="yGj-9c-P0V" secondAttribute="trailing" constant="16" id="u9Y-pO-865"/>
+                            <constraint firstItem="g0M-P3-jSw" firstAttribute="top" secondItem="3Zn-2b-5MO" secondAttribute="bottom" constant="16" id="uOH-rt-TVg"/>
                             <constraint firstItem="GQj-p6-Asu" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="v4R-5o-hhJ"/>
                             <constraint firstItem="yGj-9c-P0V" firstAttribute="top" secondItem="GQj-p6-Asu" secondAttribute="bottom" constant="16" id="wSp-OF-ZXn"/>
                         </constraints>
@@ -83,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Itd-Vd-rGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="-67"/>
+            <point key="canvasLocation" x="-36.231884057971016" y="-67.633928571428569"/>
         </scene>
     </scenes>
     <resources>
