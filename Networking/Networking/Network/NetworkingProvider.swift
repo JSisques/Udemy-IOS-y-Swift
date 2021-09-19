@@ -16,7 +16,9 @@ final class NetworkingProvider{
     private let baseUrl = "https://gorest.co.in/public/v1/"
     private let statusOk = 200...299
     
-    func getUser(id: Int){
+    //Utilizamos closures para devolver datos de una peticion
+    //Siempre que queramos retornar un closure de forma asincrona tendremos que anotar escaping
+    func getUser(id: Int, success: @escaping (_ user: User) -> (), failure: @escaping (_ error: Error?) -> ()){
         let url = "\(baseUrl)users/\(id)"
         
         //Peticion de tipo get con una validacion de entre 200 y 299
@@ -26,10 +28,9 @@ final class NetworkingProvider{
             
             //Comprobamos si los datos estan OK
             if let user = response.value?.data{
-                print(user)
-                print(user.email)
+                success(user)
             } else{
-                print(response.error?.responseCode ?? "No error")
+                failure(response.error)
             }
         }
     }

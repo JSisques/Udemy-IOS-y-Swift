@@ -23,15 +23,43 @@
                                     <action selector="getUserAction:" destination="sxA-E6-HIb" eventType="touchUpInside" id="tKA-I5-Guk"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="MXt-99-WJG">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcr-rN-nj1">
+                                <rect key="frame" x="16" y="106" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQj-p6-Asu">
+                                <rect key="frame" x="16" y="143" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lUc-hC-317"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MXt-99-WJG" firstAttribute="centerX" secondItem="Jtv-Ct-TlX" secondAttribute="centerX" id="5ma-V8-88v"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="0Ah-d1-VG2" secondAttribute="trailing" constant="16" id="9Z3-VM-YAL"/>
+                            <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="GQj-p6-Asu" secondAttribute="trailing" constant="16" id="Bmf-Zo-2wv"/>
+                            <constraint firstItem="MXt-99-WJG" firstAttribute="centerY" secondItem="Jtv-Ct-TlX" secondAttribute="centerY" id="Mv3-P4-vY2"/>
+                            <constraint firstItem="GQj-p6-Asu" firstAttribute="top" secondItem="Bcr-rN-nj1" secondAttribute="bottom" constant="16" id="OjW-9c-aYy"/>
                             <constraint firstItem="0Ah-d1-VG2" firstAttribute="top" secondItem="lUc-hC-317" secondAttribute="top" constant="16" id="Sjb-Pe-m9k"/>
+                            <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="Bcr-rN-nj1" secondAttribute="trailing" constant="16" id="dvH-kv-7Di"/>
                             <constraint firstItem="0Ah-d1-VG2" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="g7x-wb-6ub"/>
+                            <constraint firstItem="Bcr-rN-nj1" firstAttribute="top" secondItem="0Ah-d1-VG2" secondAttribute="bottom" constant="16" id="oXo-7H-6mn"/>
+                            <constraint firstItem="Bcr-rN-nj1" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="qUT-JE-ogk"/>
+                            <constraint firstItem="GQj-p6-Asu" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="v4R-5o-hhJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="MXt-99-WJG" id="eMb-2e-7GW"/>
+                        <outlet property="lblEmail" destination="GQj-p6-Asu" id="b1P-Ld-H8Z"/>
+                        <outlet property="lblName" destination="Bcr-rN-nj1" id="ohW-8V-T2H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Itd-Vd-rGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
