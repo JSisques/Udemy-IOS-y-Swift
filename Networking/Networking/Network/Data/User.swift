@@ -18,6 +18,19 @@ struct User: Decodable {
     let email: String?
     let gender: String?
     let status: String?
-    //let created_at: Date?
-    //let updated_at: Date?
+    let createdAt: Date?
+    let updatedAt: Date?
+    
+    /*
+    //Para mapear con nombres los campos del JSON
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case emai
+        case gender
+        case status
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+    }
+ */
 }

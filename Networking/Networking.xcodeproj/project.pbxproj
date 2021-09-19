@@ -16,6 +16,7 @@
 		5962348126F7457100F62E27 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5962348026F7457100F62E27 /* Alamofire */; };
 		5962348326F7458000F62E27 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962348226F7458000F62E27 /* NetworkingProvider.swift */; };
 		5962348726F7462000F62E27 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962348626F7462000F62E27 /* User.swift */; };
+		5962348A26F74F0300F62E27 /* DateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962348926F74F0300F62E27 /* DateDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		5962347926F7450100F62E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5962348226F7458000F62E27 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		5962348626F7462000F62E27 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5962348926F74F0300F62E27 /* DateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		5962348426F745FE00F62E27 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5962348826F74EF700F62E27 /* Decoder */,
 				5962348226F7458000F62E27 /* NetworkingProvider.swift */,
 				5962348526F7460A00F62E27 /* Data */,
 			);
@@ -89,6 +92,14 @@
 				5962348626F7462000F62E27 /* User.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		5962348826F74EF700F62E27 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				5962348926F74F0300F62E27 /* DateDecoder.swift */,
+			);
+			path = Decoder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				5962346C26F744FF00F62E27 /* AppDelegate.swift in Sources */,
 				5962348326F7458000F62E27 /* NetworkingProvider.swift in Sources */,
 				5962348726F7462000F62E27 /* User.swift in Sources */,
+				5962348A26F74F0300F62E27 /* DateDecoder.swift in Sources */,
 				5962346E26F744FF00F62E27 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,12 +21,13 @@ final class NetworkingProvider{
         
         //Peticion de tipo get con una validacion de entre 200 y 299
         //Con response decodable intentamos parsear la respuesta al objeto de tipo userResponse
-        AF.request(url, method: .get).validate(statusCode: statusOk).responseDecodable(of: UserResponse.self){
+        AF.request(url, method: .get).validate(statusCode: statusOk).responseDecodable(of: UserResponse.self, decoder: DateDecorder()){
             response in
             
             //Comprobamos si los datos estan OK
             if let user = response.value?.data{
                 print(user)
+                print(user.email)
             } else{
                 print(response.error?.responseCode ?? "No error")
             }
