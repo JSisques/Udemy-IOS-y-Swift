@@ -76,6 +76,22 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func deleteUserAction(_ sender: Any) {
+        
+        activityIndicator.startAnimating()
+        
+        let id = 8
+        
+        NetworkingProvider.shared.deleteUser(id: id){
+                
+            self.activityIndicator.stopAnimating()
+            self.lblName.text = "Se ha borrado el user \(id)"
+            self.lblEmail.text = ""
+            self.lblId = ""
+            
+        } failure: { error in
+            self.activityIndicator.stopAnimating()
+            self.lblName.text = error.debugDescription
+        }
     }
     
     private func setupUser(user: User){
