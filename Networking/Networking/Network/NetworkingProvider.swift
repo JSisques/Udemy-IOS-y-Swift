@@ -34,4 +34,20 @@ final class NetworkingProvider{
             }
         }
     }
+    
+    func addUser(user: NewUser, success: @escaping (_ user: User) -> (), failure: @escaping (_ error: Error?) -> ()){
+        let url = "\(baseUrl)users"
+        
+        //Utilizamos JSONParameterEncoder para transformar el parametro en un json
+        AF.request(url, method: .post, parameters: user, encoder: JSONParameterEncoder.default).validate(statusCode: statusOk).responseDecodable(of: UserResponse.self, decoder: DateDecorder()){
+            response in
+            
+            //Comprobamos si los datos estan OK
+            if let user = response.value?.data{
+                success(user)
+            } else{
+                failure(response.error)
+            }
+        }
+    }
 }

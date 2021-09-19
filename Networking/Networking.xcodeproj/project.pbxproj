@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5916C28826F7FDCC0088A57F /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5916C28726F7FDCC0088A57F /* NewUser.swift */; };
 		5962346C26F744FF00F62E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962346B26F744FF00F62E27 /* AppDelegate.swift */; };
 		5962346E26F744FF00F62E27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962346D26F744FF00F62E27 /* SceneDelegate.swift */; };
 		5962347026F744FF00F62E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5962346F26F744FF00F62E27 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5916C28726F7FDCC0088A57F /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 		5962346826F744FF00F62E27 /* Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5962346B26F744FF00F62E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5962346D26F744FF00F62E27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5962348626F7462000F62E27 /* User.swift */,
+				5916C28726F7FDCC0088A57F /* NewUser.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				5962348726F7462000F62E27 /* User.swift in Sources */,
 				5962348A26F74F0300F62E27 /* DateDecoder.swift in Sources */,
 				5962346E26F744FF00F62E27 /* SceneDelegate.swift in Sources */,
+				5916C28826F7FDCC0088A57F /* NewUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

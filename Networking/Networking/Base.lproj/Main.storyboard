@@ -38,26 +38,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGj-9c-P0V">
+                                <rect key="frame" x="16" y="180" width="382" height="30"/>
+                                <state key="normal" title="Post User"/>
+                                <connections>
+                                    <action selector="postUserAction:" destination="sxA-E6-HIb" eventType="touchUpInside" id="wYV-6O-i71"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIT-0J-0kk">
+                                <rect key="frame" x="16" y="226" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lUc-hC-317"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MXt-99-WJG" firstAttribute="centerX" secondItem="Jtv-Ct-TlX" secondAttribute="centerX" id="5ma-V8-88v"/>
+                            <constraint firstItem="GIT-0J-0kk" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="7yf-ar-LyF"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="0Ah-d1-VG2" secondAttribute="trailing" constant="16" id="9Z3-VM-YAL"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="GQj-p6-Asu" secondAttribute="trailing" constant="16" id="Bmf-Zo-2wv"/>
                             <constraint firstItem="MXt-99-WJG" firstAttribute="centerY" secondItem="Jtv-Ct-TlX" secondAttribute="centerY" id="Mv3-P4-vY2"/>
                             <constraint firstItem="GQj-p6-Asu" firstAttribute="top" secondItem="Bcr-rN-nj1" secondAttribute="bottom" constant="16" id="OjW-9c-aYy"/>
                             <constraint firstItem="0Ah-d1-VG2" firstAttribute="top" secondItem="lUc-hC-317" secondAttribute="top" constant="16" id="Sjb-Pe-m9k"/>
+                            <constraint firstItem="yGj-9c-P0V" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="aPp-h3-LXG"/>
                             <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="Bcr-rN-nj1" secondAttribute="trailing" constant="16" id="dvH-kv-7Di"/>
                             <constraint firstItem="0Ah-d1-VG2" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="g7x-wb-6ub"/>
                             <constraint firstItem="Bcr-rN-nj1" firstAttribute="top" secondItem="0Ah-d1-VG2" secondAttribute="bottom" constant="16" id="oXo-7H-6mn"/>
+                            <constraint firstItem="GIT-0J-0kk" firstAttribute="top" secondItem="yGj-9c-P0V" secondAttribute="bottom" constant="16" id="pXc-J8-x3I"/>
                             <constraint firstItem="Bcr-rN-nj1" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="qUT-JE-ogk"/>
+                            <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="GIT-0J-0kk" secondAttribute="trailing" constant="16" id="s0A-FS-Ehf"/>
+                            <constraint firstItem="lUc-hC-317" firstAttribute="trailing" secondItem="yGj-9c-P0V" secondAttribute="trailing" constant="16" id="u9Y-pO-865"/>
                             <constraint firstItem="GQj-p6-Asu" firstAttribute="leading" secondItem="lUc-hC-317" secondAttribute="leading" constant="16" id="v4R-5o-hhJ"/>
+                            <constraint firstItem="yGj-9c-P0V" firstAttribute="top" secondItem="GQj-p6-Asu" secondAttribute="bottom" constant="16" id="wSp-OF-ZXn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="MXt-99-WJG" id="eMb-2e-7GW"/>
                         <outlet property="lblEmail" destination="GQj-p6-Asu" id="b1P-Ld-H8Z"/>
+                        <outlet property="lblId" destination="GIT-0J-0kk" id="vOz-62-fbv"/>
                         <outlet property="lblName" destination="Bcr-rN-nj1" id="ohW-8V-T2H"/>
                     </connections>
                 </viewController>

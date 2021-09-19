@@ -13,11 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var lblId: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         lblName.text = ""
         lblEmail.text = ""
+        lblId.text = ""
         
         activityIndicator.hidesWhenStopped = true
         activityIndicator.stopAnimating()
@@ -32,11 +35,18 @@ class ViewController: UIViewController {
             self.activityIndicator.stopAnimating()
             self.lblName.text = user.name
             self.lblEmail.text = user.email
+            //Usamos description para transformar el entero a un String
+            self.lblId.text = user.id?.description
             
         } failure: { (error) in
             self.activityIndicator.stopAnimating()
             self.lblName.text = error.debugDescription
         }
+    }
+    
+    @IBAction func postUserAction(_ sender: Any) {
+        
+        
     }
 }
 
