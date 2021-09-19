@@ -46,6 +46,22 @@ class ViewController: UIViewController {
     
     @IBAction func postUserAction(_ sender: Any) {
         
+        let newUser = NewUser(name: "Javi", email: "Javi@mail.com", genere: "Male", status: "Active")
+        
+        activityIndicator.startAnimating()
+        
+        NetworkingProvider.shared.addUser(user: newUser) { (user) in
+            
+            self.activityIndicator.stopAnimating()
+            self.lblName.text = user.name
+            self.lblEmail.text = user.email
+            //Usamos description para transformar el entero a un String
+            self.lblId.text = user.id?.description
+            
+        } failure: { (error) in
+            self.activityIndicator.stopAnimating()
+            self.lblName.text = error.debugDescription
+        }
         
     }
 }
