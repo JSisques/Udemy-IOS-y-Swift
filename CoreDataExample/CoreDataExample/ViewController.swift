@@ -120,4 +120,28 @@ extension ViewController: UITableViewDelegate{
         print(myCountries![indexPath.row].nombre)
     }
     
+    //6. - Función para eliminar haciendo swipe
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        //Crear acción de eliminar
+        let accionEliminar = UIContextualAction(style: .destructive, title: "Eliminar"){ (action,view, completionHandler) in
+            //Que pais se eliminara?
+            let paisEliminar = self.myCountries![indexPath.row]
+            
+            //Eliminar pais
+            self.context.delete(paisEliminar)
+            
+            //Guardar cambios
+            do{
+                try self.context.save()
+            } catch{
+                print("Error guardando los datos")
+            }
+            
+            //Recargar los datos
+            self.recuperarDatos()
+        }
+        
+        return UISwipeActionsConfiguration(actions: [accionEliminar])
+    }
+    
 }
