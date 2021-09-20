@@ -39,7 +39,13 @@ class ViewController: UIViewController {
     private func recuperarDatos(){
         do {
             self.myCountries = try context.fetch(Pais.fetchRequest())
-            tableView.reloadData()
+            
+            //Para actualizar los datos de manera asincrona
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
+            
         } catch {
             print("Error recuperando datos")
         }
