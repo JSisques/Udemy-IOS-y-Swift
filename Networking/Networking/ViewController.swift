@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var lblId: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var btnDownload: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,7 +89,7 @@ class ViewController: UIViewController {
             self.activityIndicator.stopAnimating()
             self.lblName.text = "Se ha borrado el user \(id)"
             self.lblEmail.text = ""
-            self.lblId = ""
+            self.lblId.text = ""
             
         } failure: { error in
             self.activityIndicator.stopAnimating()
@@ -100,5 +103,12 @@ class ViewController: UIViewController {
         //Usamos description para transformar el entero a un String
         self.lblId.text = user.id?.description
     }
+    
+    @IBAction func downloadImage(_ sender: Any) {
+        btnDownload.isHidden = true
+        
+        image.kf.setImage(with: URL(string: "https://www.apple.com/v/swift/c/images/overview/icon_swift_hero_large.png"))
+    }
+    
 }
 
