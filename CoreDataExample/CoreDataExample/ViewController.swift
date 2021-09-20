@@ -116,8 +116,43 @@ extension ViewController: UITableViewDataSource{
 
 extension ViewController: UITableViewDelegate{
     
+    // 7. - Funcion para actualizar los datos
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(myCountries![indexPath.row].nombre)
+        //print(myCountries![indexPath.row].nombre)
+        
+        //Que pais se editara?
+        let paisEditar = self.myCountries![indexPath.row]
+        
+        //Crear alerta
+        let alert = UIAlertController(title: "Editar pais", message: "Edita el pais", preferredStyle: .alert)
+        alert.addTextField()
+        
+        //Recuperar info del textfield
+        let textField = alert.textFields![0]
+        textField.placeholder = paisEditar.nombre
+        
+        //Crear y configurar boton de alerta
+        let btnAlerta = UIAlertAction(title: "Editar", style: .default){ action in
+            //Recuperar textfield de la alerta
+            let textField = alert.textFields![0]
+            
+            //Editar el pais
+            paisEditar.nombre = textField.text
+            
+            //Guardar info
+            do{
+                try self.context.save()
+            } catch{
+                print("Error al guardar los datos")
+            }
+            
+            //Refrescar tabla
+            self.recuperarDatos()
+        }
+        
+        //Añadir boton a la alerta y mostrarla
+        alert.addAction(btnAlerta)
+        self.present(alert, animated: true, completion: nil)
     }
     
     //6. - Función para eliminar haciendo swipe
