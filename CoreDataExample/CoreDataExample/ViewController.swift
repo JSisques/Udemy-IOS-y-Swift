@@ -33,6 +33,37 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addAction(_ sender: Any) {
+        //Crear alerta
+        let alert = UIAlertController(title: "Agregar pais", message: "Añade un país nuevo", preferredStyle: .alert)
+        
+        //Creamos un textfield en el alert
+        alert.addTextField(configurationHandler: nil    )
+        
+        //Crear y configurar el botoón de alerta
+        let btnAlerta = UIAlertAction(title: "Añadir", style: .default){ action in
+            //Recuperamos el text field de la alerta
+            let textField = alert.textFields![0]
+            
+            //Crear objeto pais
+            let pais = Pais(context: self.context)
+            pais.nombre = textField.text
+            
+            //Guardar info
+            do{
+                try self.context.save()
+            } catch{
+                print("Error guardando los datos")
+            }
+            
+            
+            //Refrescar info
+            self.recuperarDatos()
+            
+        }
+        
+        //Añadir boton a la alerta y mostrar alerta
+        alert.addAction(btnAlerta)
+        self.present(alert, animated: true, completion: nil)
     
     }
     
